@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring System - Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="/static/logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>Health Monitoring Results</h1>
+        <p>Heart Rate: {{ heart_rate }} bpm</p>
+        <p>Blood Pressure: {{ blood_pressure }} mmHg</p>
+        <p>Temperature: {{ temperature }} °C</p>
+        <a href="/">Go Back</a>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>www.compcit.com</p>
+        </div>
+    </footer>
+</body>
+</html>
