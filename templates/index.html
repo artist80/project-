@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="/static/logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="health-container">
+            <h1>Health Monitoring System</h1>
+            <form action="/submit" method="post">
+                <label for="heart_rate">Heart Rate (bpm):</label>
+                <input type="text" id="heart_rate" name="heart_rate" required>
+
+                <label for="blood_pressure">Blood Pressure (mmHg):</label>
+                <input type="text" id="blood_pressure" name="blood_pressure" required>
+
+                <label for="temperature">Temperature (°C):</label>
+                <input type="text" id="temperature" name="temperature" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>www.compcit.com</p>
+        </div>
+    </footer>
+</body>
+</html>
